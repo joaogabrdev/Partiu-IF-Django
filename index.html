@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Partiu IF Piauí</title>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -24,13 +24,13 @@
                     </button>
                     <nav class="nav-desktop flexivel itens-centro espaco-5" aria-label="Navegação principal">
                         <button class="item-nav ativo" type="button" data-rota="inicio">Início</button>
-                        <button class="item-nav" type="button" data-rota="programa" >Partiu IF</button>
-                        <button class="item-nav" type="button" data-rota="estude" >Estude</button>
-                        <button class="item-nav" type="button" data-rota="cursos" >Cursos</button>
-                        <button class="item-nav" type="button" data-rota="campi" >Campi</button>
-                        <button class="item-nav" type="button" data-rota="informacoes" >Informações</button>
+                        <button class="item-nav" type="button" data-rota="programa" disabled>Partiu IF</button>
+                        <button class="item-nav" type="button" data-rota="estudo" disabled>Estude</button>
+                        <button class="item-nav" type="button" data-rota="cursos" disabled>Cursos</button>
+                        <button class="item-nav" type="button" data-rota="campi" disabled>Campi</button>
+                        <button class="item-nav" type="button" data-rota="informacoes" disabled>Informações</button>
                     </nav>
-                    <button class="botao botao-contorno botao-area-estudante oculto visivel-grande" type="button" data-rota="area-estudante" >Área do estudante</button>
+                    <button class="botao botao-contorno botao-area-estudante oculto visivel-grande" type="button" data-rota="area-estudante" disabled>Área do estudante</button>
                     <div class="acoes-mobile flexivel itens-centro espaco-2">
                         <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-mobile"><i data-lucide="menu" width="20" class="icone-menu-mobile"></i><span class="apenas-leitor">Abrir menu</span></button>
                     </div>
@@ -39,11 +39,11 @@
             <nav id="menu-mobile" class="painel-mobile" aria-label="Navegação mobile">
                 <div class="grade grade-colunas-2 espaco-2">
                     <button class="item-nav texto-esquerda" type="button" data-rota="inicio">Início</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="programa" >Partiu IF</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="estude" >Estude</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="cursos" >Cursos</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="campi" >Campi</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="informacoes" >Informações</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="programa" disabled>Partiu IF</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="estudo" disabled>Estude</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="cursos" disabled>Cursos</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="campi" disabled>Campi</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="informacoes" disabled>Informações</button>
                 </div>
             </nav>
         </header>
@@ -56,8 +56,8 @@
                             <h1 class="titulo-banner">Partiu IF Piauí Online</h1>
                             <p class="texto-grande altura-linha-8 largura-max-2xl descricao-banner">Um espaço de apoio à jornada do estudante, preparado para reunir orientações, estudos e informações oficiais em um só lugar.</p>
                             <div class="flexivel quebra-flex espaco-3 margem-superior-8">
-                                <button class="botao botao-claro botao-banner-claro" type="button" data-rota="programa" >Conheça o Partiu IF</button>
-                                <button class="botao botao-primario borda borda-branca-20 botao-banner-primario" type="button" data-rota="estude" >Comece a estudar</button>
+                                <button class="botao botao-claro botao-banner-claro" type="button" data-rota="programa" disabled>Conheça o Partiu IF</button>
+                                <button class="botao botao-primario borda borda-branca-20 botao-banner-primario" type="button" data-rota="estudo" disabled>Comece a estudar</button>
                             </div>
                         </div>
                     </div>
@@ -70,12 +70,12 @@
                             </div>
                         </div>
                         <div class="grade-cartoes">
-                            <button class="cartao-portal cartao-link" data-rota="estude" ><i data-lucide="book-open" width="21"></i><h3>Estude</h3><p>Materiais, conteúdos e orientações.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="cursos" ><i data-lucide="graduation-cap" width="21"></i><h3>Cursos</h3><p>Conheça a estrutura dos cursos.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="campi" ><i data-lucide="map-pin" width="21"></i><h3>Campi</h3><p>Consulte informações em atualização.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="noticias" ><i data-lucide="newspaper" width="21"></i><h3>Notícias e avisos</h3><p>Avisos e comunicados demonstrativos.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="informacoes" ><i data-lucide="file-text" width="21"></i><h3>Editais e documentos</h3><p>Documentos oficiais serão disponibilizados.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="informacoes" ><i data-lucide="calendar-days" width="21"></i><h3>Calendário</h3><p>Datas e prazos oficiais em atualização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estudo" disabled><i data-lucide="book-open" width="21"></i><h3>Estude</h3><p>Materiais, conteúdos e orientações.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" disabled><i data-lucide="graduation-cap" width="21"></i><h3>Cursos</h3><p>Conheça a estrutura dos cursos.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="campi" disabled><i data-lucide="map-pin" width="21"></i><h3>Campi</h3><p>Consulte informações em atualização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="noticias" disabled><i data-lucide="newspaper" width="21"></i><h3>Notícias e avisos</h3><p>Avisos e comunicados demonstrativos.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="informacoes" disabled><i data-lucide="file-text" width="21"></i><h3>Editais e documentos</h3><p>Documentos oficiais serão disponibilizados.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="informacoes" disabled><i data-lucide="calendar-days" width="21"></i><h3>Calendário</h3><p>Datas e prazos oficiais em atualização.</p></button>
                         </div>
                     </section>
 
@@ -85,24 +85,24 @@
                                 <p class="sobretitulo">Estude com organização</p>
                                 <h2 class="titulo-secao-escuro">Organize seus estudos</h2>
                             </div>
-                            <button class="botao botao-contorno" type="button" data-rota="estude" >Ver ambiente de estudos <i data-lucide="arrow-right" width="17"></i></button>
+                            <button class="botao botao-contorno" type="button" data-rota="estudo" disabled>Ver ambiente de estudos <i data-lucide="arrow-right" width="17"></i></button>
                         </div>
                         <div class="grade-cartoes">
-                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="book-open" width="21"></i></div><h3>Materiais de estudo</h3><p>Materiais demonstrativos preparados para organização futura.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="files" width="21"></i></div><h3>Conteúdos</h3><p>Conteúdos por disciplina com informações em atualização.</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="pen-line" width="21"></i></div><h3>Exercícios</h3><p>Exercícios demonstrativos para futura disponibilização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estudo" disabled><div class="caixa-icone"><i data-lucide="book-open" width="21"></i></div><h3>Materiais de estudo</h3><p>Materiais demonstrativos preparados para organização futura.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estudo" disabled><div class="caixa-icone"><i data-lucide="files" width="21"></i></div><h3>Conteúdos</h3><p>Conteúdos por disciplina com informações em atualização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estudo" disabled><div class="caixa-icone"><i data-lucide="pen-line" width="21"></i></div><h3>Exercícios</h3><p>Exercícios demonstrativos para futura disponibilização.</p></button>
                         </div>
                         <section class="margem-superior-10 cartao-portal">
                             <h2 class="titulo-secao-escuro">Área do estudante</h2>
                             <div class="grade-quatro margem-superior-6">
-                                <button class="cartao-portal cartao-link" data-rota="perfil" ><h3>Perfil</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="turma" ><h3>Turma</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="aprendizagem" ><h3>Trilha de Aprendizagem</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="notas" ><h3>Notas</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="simulados" ><h3>Simulados</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="horarios" ><h3>Horários</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="materias" ><h3>Matérias</h3></button>
-                                <button class="cartao-portal cartao-link" data-rota="avisos" ><h3>Avisos</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="perfil" disabled><h3>Perfil</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="turma" disabled><h3>Turma</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="aprendizagem" disabled><h3>Trilha de Aprendizagem</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="notas" disabled><h3>Notas</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="simulados" disabled><h3>Simulados</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="horarios" disabled><h3>Horários</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="materias" disabled><h3>Matérias</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="avisos" disabled><h3>Avisos</h3></button>
                             </div>
                         </section>
                     </section>
@@ -113,12 +113,12 @@
                                 <p class="sobretitulo">Cursos</p>
                                 <h2 class="titulo-secao-escuro">Conheça os cursos</h2>
                             </div>
-                            <button class="botao botao-contorno" type="button" data-rota="cursos" >Explorar cursos</button>
+                            <button class="botao botao-contorno" type="button" data-rota="cursos" disabled>Explorar cursos</button>
                         </div>
                         <div class="grade-cartoes">
-                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Informática</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Administração</h3><p><strong>Turno:</strong> Tarde</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
-                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Eletrotécnica</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" disabled><h3>Informática</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" disabled><h3>Administração</h3><p><strong>Turno:</strong> Tarde</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" disabled><h3>Eletrotécnica</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
                         </div>
                     </section>
 
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="grade-cartoes">
-                            <button class="cartao-portal cartao-link" data-rota="campi" ><div class="caixa-icone"><i data-lucide="map-pin" width="21"></i></div><h3>Campus Teresina Central</h3><p>Teresina - PI</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="campi" disabled><div class="caixa-icone"><i data-lucide="map-pin" width="21"></i></div><h3>Campus Teresina Central</h3><p>Teresina - PI</p></button>
                         </div>
                     </section>
 
@@ -142,7 +142,7 @@
                             </div>
                         </div>
                         <div class="grade-cartoes">
-                            <button class="cartao-portal cartao-link" data-rota="noticias" ><span class="etiqueta etiqueta-suave">Comunicado</span><h3>Informações para novos estudantes</h3><p>Data oficial em atualização</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="noticias" disabled><span class="etiqueta etiqueta-suave">Comunicado</span><h3>Informações para novos estudantes</h3><p>Data oficial em atualização</p></button>
                         </div>
                     </section>
                 </div>
@@ -258,11 +258,11 @@
                     </div>
                     <nav class="grade grade-colunas-2 espaco-3 altura-max-conteudo" aria-label="Navegação do rodapé">
                         <button class="link-rodape" data-rota="inicio">Início</button>
-                        <button class="link-rodape" data-rota="programa" >Partiu IF</button>
-                        <button class="link-rodape" data-rota="estude" >Estude</button>
-                        <button class="link-rodape" data-rota="cursos" >Cursos</button>
-                        <button class="link-rodape" data-rota="campi" >Campi</button>
-                        <button class="link-rodape" data-rota="informacoes" >Informações</button>
+                        <button class="link-rodape" data-rota="programa" disabled>Partiu IF</button>
+                        <button class="link-rodape" data-rota="estudo" disabled>Estude</button>
+                        <button class="link-rodape" data-rota="cursos" disabled>Cursos</button>
+                        <button class="link-rodape" data-rota="campi" disabled>Campi</button>
+                        <button class="link-rodape" data-rota="informacoes" disabled>Informações</button>
                     </nav>
                 </div>
                 <div class="borda-superior margem-superior-8 preenchimento-superior-5">

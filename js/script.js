@@ -2,12 +2,6 @@ lucide.createIcons();
 
 const rotasPagina = {
     'inicio': 'index.html',
-    'programa': '../programa/programa.html',
-    'estude': '../estude/estude.html',
-    'cursos': '../cursos/cursos.html',
-    'campi': '../campi/campi.html',
-    'informacoes': '../info/informações.html',
-    'area-estudante': '../area-estudante/area-estudante.html',
 };
 
 function ir(rota) {
