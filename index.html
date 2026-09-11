@@ -1,0 +1,275 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Partiu IF Piauí</title>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="icon/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="principal">
+        <header class="cabecalho-portal fundo-branco">
+            <div class="largura-total largura-max-1180 margem-auto-x preenchimento-x-5">
+                <div class="altura-min-72 flexivel itens-centro espaco-4 justificar-espaco">
+                    <button class="flexivel itens-centro espaco-2 texto-esquerda" type="button" data-rota="inicio" aria-label="Ir para início">
+                        <span>
+                            <span class="bloco titulo-marca">Partiu IF Piauí</span>
+                        </span>
+                    </button>
+                    <nav class="nav-desktop flexivel itens-centro espaco-5" aria-label="Navegação principal">
+                        <button class="item-nav ativo" type="button" data-rota="inicio">Início</button>
+                        <button class="item-nav" type="button" data-rota="programa" >Partiu IF</button>
+                        <button class="item-nav" type="button" data-rota="estude" >Estude</button>
+                        <button class="item-nav" type="button" data-rota="cursos" >Cursos</button>
+                        <button class="item-nav" type="button" data-rota="campi" >Campi</button>
+                        <button class="item-nav" type="button" data-rota="informacoes" >Informações</button>
+                    </nav>
+                    <button class="botao botao-contorno botao-area-estudante oculto visivel-grande" type="button" data-rota="area-estudante" >Área do estudante</button>
+                    <div class="acoes-mobile flexivel itens-centro espaco-2">
+                        <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-mobile"><i data-lucide="menu" width="20" class="icone-menu-mobile"></i><span class="apenas-leitor">Abrir menu</span></button>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu-mobile" class="painel-mobile" aria-label="Navegação mobile">
+                <div class="grade grade-colunas-2 espaco-2">
+                    <button class="item-nav texto-esquerda" type="button" data-rota="inicio">Início</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="programa" >Partiu IF</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="estude" >Estude</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="cursos" >Cursos</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="campi" >Campi</button>
+                    <button class="item-nav texto-esquerda" type="button" data-rota="informacoes" >Informações</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="interior-pagina">
+                    <div class="banner-principal">
+                        <div class="conteudo-banner">
+                            <h1 class="titulo-banner">Partiu IF Piauí Online</h1>
+                            <p class="texto-grande altura-linha-8 largura-max-2xl descricao-banner">Um espaço de apoio à jornada do estudante, preparado para reunir orientações, estudos e informações oficiais em um só lugar.</p>
+                            <div class="flexivel quebra-flex espaco-3 margem-superior-8">
+                                <button class="botao botao-claro botao-banner-claro" type="button" data-rota="programa" >Conheça o Partiu IF</button>
+                                <button class="botao botao-primario borda borda-branca-20 botao-banner-primario" type="button" data-rota="estude" >Comece a estudar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section>
+                        <div class="cabecalho-secao">
+                            <div>
+                                <p class="sobretitulo">Portal educacional</p>
+                                <h2 class="titulo-secao-escuro">Acessos rápidos</h2>
+                            </div>
+                        </div>
+                        <div class="grade-cartoes">
+                            <button class="cartao-portal cartao-link" data-rota="estude" ><i data-lucide="book-open" width="21"></i><h3>Estude</h3><p>Materiais, conteúdos e orientações.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" ><i data-lucide="graduation-cap" width="21"></i><h3>Cursos</h3><p>Conheça a estrutura dos cursos.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="campi" ><i data-lucide="map-pin" width="21"></i><h3>Campi</h3><p>Consulte informações em atualização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="noticias" ><i data-lucide="newspaper" width="21"></i><h3>Notícias e avisos</h3><p>Avisos e comunicados demonstrativos.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="informacoes" ><i data-lucide="file-text" width="21"></i><h3>Editais e documentos</h3><p>Documentos oficiais serão disponibilizados.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="informacoes" ><i data-lucide="calendar-days" width="21"></i><h3>Calendário</h3><p>Datas e prazos oficiais em atualização.</p></button>
+                        </div>
+                    </section>
+
+                    <section class="margem-superior-10">
+                        <div class="cabecalho-secao">
+                            <div>
+                                <p class="sobretitulo">Estude com organização</p>
+                                <h2 class="titulo-secao-escuro">Organize seus estudos</h2>
+                            </div>
+                            <button class="botao botao-contorno" type="button" data-rota="estude" >Ver ambiente de estudos <i data-lucide="arrow-right" width="17"></i></button>
+                        </div>
+                        <div class="grade-cartoes">
+                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="book-open" width="21"></i></div><h3>Materiais de estudo</h3><p>Materiais demonstrativos preparados para organização futura.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="files" width="21"></i></div><h3>Conteúdos</h3><p>Conteúdos por disciplina com informações em atualização.</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="estude" ><div class="caixa-icone"><i data-lucide="pen-line" width="21"></i></div><h3>Exercícios</h3><p>Exercícios demonstrativos para futura disponibilização.</p></button>
+                        </div>
+                        <section class="margem-superior-10 cartao-portal">
+                            <h2 class="titulo-secao-escuro">Área do estudante</h2>
+                            <div class="grade-quatro margem-superior-6">
+                                <button class="cartao-portal cartao-link" data-rota="perfil" ><h3>Perfil</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="turma" ><h3>Turma</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="aprendizagem" ><h3>Trilha de Aprendizagem</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="notas" ><h3>Notas</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="simulados" ><h3>Simulados</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="horarios" ><h3>Horários</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="materias" ><h3>Matérias</h3></button>
+                                <button class="cartao-portal cartao-link" data-rota="avisos" ><h3>Avisos</h3></button>
+                            </div>
+                        </section>
+                    </section>
+
+                    <section class="margem-superior-10">
+                        <div class="cabecalho-secao">
+                            <div>
+                                <p class="sobretitulo">Cursos</p>
+                                <h2 class="titulo-secao-escuro">Conheça os cursos</h2>
+                            </div>
+                            <button class="botao botao-contorno" type="button" data-rota="cursos" >Explorar cursos</button>
+                        </div>
+                        <div class="grade-cartoes">
+                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Informática</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Administração</h3><p><strong>Turno:</strong> Tarde</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                            <button class="cartao-portal cartao-link" data-rota="cursos" ><h3>Eletrotécnica</h3><p><strong>Turno:</strong> Manhã</p><p class="margem-superior-1"><strong>Modalidade:</strong> Ensino Médio Integrado ao Técnico</p></button>
+                        </div>
+                    </section>
+
+                    <section class="margem-superior-10">
+                        <div class="cabecalho-secao">
+                            <div>
+                                <p class="sobretitulo">Campi</p>
+                                <h2 class="titulo-secao-escuro">Encontre informações sobre os campi</h2>
+                            </div>
+                        </div>
+                        <div class="grade-cartoes">
+                            <button class="cartao-portal cartao-link" data-rota="campi" ><div class="caixa-icone"><i data-lucide="map-pin" width="21"></i></div><h3>Campus Teresina Central</h3><p>Teresina - PI</p></button>
+                        </div>
+                    </section>
+
+                    <section class="margem-superior-10">
+                        <div class="cabecalho-secao">
+                            <div>
+                                <p class="sobretitulo">Atualizações</p>
+                                <h2 class="titulo-secao-escuro">Notícias e avisos</h2>
+                            </div>
+                        </div>
+                        <div class="grade-cartoes">
+                            <button class="cartao-portal cartao-link" data-rota="noticias" ><span class="etiqueta etiqueta-suave">Comunicado</span><h3>Informações para novos estudantes</h3><p>Data oficial em atualização</p></button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="visao-programa" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Partiu IF</span></div>
+                    <p class="sobretitulo">Partiu IF</p>
+                    <h1 class="titulo-pagina">Partiu IF</h1>
+                    <p class="texto-grande largura-max-2xl texto-secao-suave">Conheça a estrutura prevista para apresentar o programa, suas orientações e as informações relevantes para estudantes.</p>
+                    <div class="layout-informacoes margem-superior-10">
+                        <div class="espaco-vertical-4">
+                            <article class="cartao-portal"><h2>O que é o programa</h2><p>Informação oficial em atualização. Este bloco foi preparado para receber conteúdo validado.</p></article>
+                            <article class="cartao-portal"><h2>Objetivo</h2><p>Informação oficial em atualização. Este bloco foi preparado para receber conteúdo validado.</p></article>
+                            <article class="cartao-portal"><h2>Quem pode participar</h2><p>Informação oficial em atualização. Este bloco foi preparado para receber conteúdo validado.</p></article>
+                        </div>
+                        <aside class="painel-lateral"><h3>Importante</h3><p class="cor-suave">Esta área é demonstrativa. Informações oficiais serão inseridas após validação.</p></aside>
+                    </div>
+                    <section class="margem-superior-10">
+                        <h2 class="texto-2xl cor-azul fonte-extra-negrito margem-inferior-3">Perguntas frequentes</h2>
+                        <div class="cartao-portal">
+                            <div class="item-pergunta preenchimento-3 borda-inferior"><strong class="bloco cor-azul">Como posso participar?</strong><p class="texto-pequeno cor-cinza margem-superior-1">Resposta oficial em atualização.</p></div>
+                            <div class="item-pergunta preenchimento-3 borda-inferior"><strong class="bloco cor-azul">Onde encontro informações de inscrições?</strong><p class="texto-pequeno cor-cinza margem-superior-1">Resposta oficial em atualização.</p></div>
+                            <div class="item-pergunta preenchimento-3"><strong class="bloco cor-azul">Quais documentos serão necessários?</strong><p class="texto-pequeno cor-cinza margem-superior-1">Resposta oficial em atualização.</p></div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="visao-estudo" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Estude</span></div>
+                    <p class="sobretitulo">Ambiente de estudos</p>
+                    <h1 class="titulo-pagina">Estude no seu ritmo</h1>
+                    <p class="texto-grande largura-max-2xl texto-secao-suave">Encontre materiais, conteúdos, exercícios e orientações em uma área preparada para acompanhar sua preparação.</p>
+                    <div class="grade-cartoes margem-superior-8">
+                        <article class="cartao-portal"><div class="caixa-icone"><i data-lucide="book-open" width="21"></i></div><h3>Materiais de estudo</h3><p>Materiais demonstrativos preparados para organização futura.</p></article>
+                        <article class="cartao-portal"><div class="caixa-icone"><i data-lucide="files" width="21"></i></div><h3>Conteúdos por disciplina</h3><p>Conteúdos com informações em atualização.</p></article>
+                        <article class="cartao-portal"><div class="caixa-icone"><i data-lucide="pen-line" width="21"></i></div><h3>Exercícios</h3><p>Exercícios demonstrativos para futura disponibilização.</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visao-cursos" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Cursos</span></div>
+                    <p class="sobretitulo">Cursos</p><h1 class="titulo-pagina">Cursos</h1>
+                    <p class="cor-suave texto-grande">Os dados oficiais sobre os cursos do IFPI estão em atualização.</p>
+                    <div class="grade-cartoes margem-superior-8">
+                        <article class="cartao-portal"><h3>Técnico em Informática</h3><p>Campus Teresina Central · Integrado</p></article>
+                        <article class="cartao-portal"><h3>Técnico em Administração</h3><p>Campus Parnaíba · Subsequente</p></article>
+                        <article class="cartao-portal"><h3>Técnico em Edificações</h3><p>Campus Teresina Central · Integrado</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visao-campi" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Campi</span></div>
+                    <p class="sobretitulo">Campi</p><h1 class="titulo-pagina">Campi</h1>
+                    <p class="cor-suave texto-grande">Lista demonstrativa de unidades do IFPI no Piauí.</p>
+                    <div class="grade-cartoes margem-superior-8">
+                        <article class="cartao-portal"><h3>Campus Teresina Central</h3><p>Praça da Liberdade, Centro, Teresina - PI</p></article>
+                        <article class="cartao-portal"><h3>Campus Parnaíba</h3><p>BR-343, Parnaíba - PI</p></article>
+                        <article class="cartao-portal"><h3>Campus Floriano</h3><p>BR-343, Floriano - PI</p></article>
+                        <article class="cartao-portal"><h3>Campus Picos</h3><p>Av. Pedro Mamede, Picos - PI</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="visao-informacoes" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Informações</span></div>
+                    <p class="sobretitulo">Informações</p><h1 class="titulo-pagina">Informações para estudantes</h1>
+                    <p class="texto-grande largura-max-2xl texto-secao-suave">Encontre os principais caminhos para acompanhar informações sobre participação, inscrições, documentos e orientações.</p>
+                    <div class="grade-quatro margem-superior-8">
+                        <article class="cartao-portal"><h3>Como participar</h3><p>Informação em atualização.</p></article>
+                        <article class="cartao-portal"><h3>Inscrições</h3><p>Informação em atualização.</p></article>
+                        <article class="cartao-portal"><h3>Processo seletivo</h3><p>Informação em atualização.</p></article>
+                        <article class="cartao-portal"><h3>Editais</h3><p>Informação em atualização.</p></article>
+                    </div>
+                    <section class="margem-superior-10 cartao-portal">
+                        <p class="sobretitulo">Dúvidas</p>
+                        <h2 class="texto-2xl fonte-extra-negrito cor-azul margem-superior-2">Envie uma dúvida</h2>
+                        <p class="cor-suave margem-superior-1">Canal demonstrativo. A mensagem será registrada para organização futura.</p>
+                        <form class="grade grade-colunas-2-md espaco-4 margem-superior-6" novalidate>
+                            <div><label class="rotulo-formulario" for="duvida-nome">Nome</label><input id="duvida-nome" class="campo-formulario" type="text" required></div>
+                            <div><label class="rotulo-formulario" for="duvida-email">E-mail</label><input id="duvida-email" class="campo-formulario" type="email" required></div>
+                            <div class="coluna-completa-md"><label class="rotulo-formulario" for="duvida-mensagem">Dúvida</label><textarea id="duvida-mensagem" class="campo-formulario altura-min-120" required></textarea></div>
+                            <div class="coluna-completa-md"><button class="botao botao-primario" type="submit">Enviar dúvida</button></div>
+                        </form>
+                    </section>
+                </div>
+            </section>
+
+            <section id="visao-area-estudante" class="visao futura">
+                <div class="interior-pagina">
+                    <div class="trilha-navegacao"><button class="link-trilha" data-rota="inicio">Início</button><span>Área do estudante</span></div>
+                    <p class="sobretitulo">Serviço futuro</p><h1 class="titulo-pagina">Área do estudante</h1>
+                    <p class="texto-grande largura-max-2xl texto-secao-suave">A área autenticada está em desenvolvimento. Não há login, cadastro ou dados pessoais neste protótipo.</p>
+                    <div class="estado-vazio margem-superior-8"><i data-lucide="lock-keyhole" width="28"></i><strong class="bloco cor-azul margem-inferior-3">Funcionalidade futura</strong>Serviços personalizados serão disponibilizados após validação institucional.</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <div class="largura-total largura-max-1180 margem-auto-x preenchimento-x-5" style="padding-top: 2.5rem; padding-bottom: 2.5rem;">
+                <div class="grade grade-rodape espaco-9">
+                    <div>
+                        <p class="fonte-extra-negrito texto-xl">Partiu IF Piauí Online</p>
+                        <p class="fonte-negrito margem-superior-3 largura-max-lg altura-linha-7">Protótipo educacional feito por alunos para alunos.</p>
+                    </div>
+                    <nav class="grade grade-colunas-2 espaco-3 altura-max-conteudo" aria-label="Navegação do rodapé">
+                        <button class="link-rodape" data-rota="inicio">Início</button>
+                        <button class="link-rodape" data-rota="programa" >Partiu IF</button>
+                        <button class="link-rodape" data-rota="estude" >Estude</button>
+                        <button class="link-rodape" data-rota="cursos" >Cursos</button>
+                        <button class="link-rodape" data-rota="campi" >Campi</button>
+                        <button class="link-rodape" data-rota="informacoes" >Informações</button>
+                    </nav>
+                </div>
+                <div class="borda-superior margem-superior-8 preenchimento-superior-5">
+                    <p class="copyright-rodape"><strong>Partiu IF Piauí Online · Protótipo | Última atualização: 06/09/2026</strong></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
