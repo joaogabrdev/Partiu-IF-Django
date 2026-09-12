@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 
 <html lang="pt-BR">
@@ -7,46 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Partiu IF Piauí</title>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-    <script src="js/script.js" defer></script>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script src="{% static 'js/script.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/icon.png' %}" type="image/x-icon">
 </head>
 
 <body>
     <div class="principal">
-        <header class="cabecalho-portal fundo-branco">
-            <div class="largura-total largura-max-1180 margem-auto-x preenchimento-x-5">
-                <div class="altura-min-72 flexivel itens-centro espaco-4 justificar-espaco">
-                    <button class="flexivel itens-centro espaco-2 texto-esquerda" type="button" data-rota="inicio" aria-label="Ir para início">
-                        <span>
-                            <span class="bloco titulo-marca">Partiu IF Piauí</span>
-                        </span>
-                    </button>
-                    <nav class="nav-desktop flexivel itens-centro espaco-5" aria-label="Navegação principal">
-                        <button class="item-nav ativo" type="button" data-rota="inicio">Início</button>
-                        <button class="item-nav" type="button" data-rota="programa" disabled>Partiu IF</button>
-                        <button class="item-nav" type="button" data-rota="estudo" disabled>Estude</button>
-                        <button class="item-nav" type="button" data-rota="cursos" disabled>Cursos</button>
-                        <button class="item-nav" type="button" data-rota="campi" disabled>Campi</button>
-                        <button class="item-nav" type="button" data-rota="informacoes" disabled>Informações</button>
-                    </nav>
-                    <button class="botao botao-contorno botao-area-estudante oculto visivel-grande" type="button" data-rota="area-estudante" disabled>Área do estudante</button>
-                    <div class="acoes-mobile flexivel itens-centro espaco-2">
-                        <button id="botao-menu" class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-mobile"><i data-lucide="menu" width="20" class="icone-menu-mobile"></i><span class="apenas-leitor">Abrir menu</span></button>
-                    </div>
-                </div>
-            </div>
-            <nav id="menu-mobile" class="painel-mobile" aria-label="Navegação mobile">
-                <div class="grade grade-colunas-2 espaco-2">
-                    <button class="item-nav texto-esquerda" type="button" data-rota="inicio">Início</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="programa" disabled>Partiu IF</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="estudo" disabled>Estude</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="cursos" disabled>Cursos</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="campi" disabled>Campi</button>
-                    <button class="item-nav texto-esquerda" type="button" data-rota="informacoes" disabled>Informações</button>
-                </div>
-            </nav>
-        </header>
+        {% include 'components/_header.html' %}
 
         <main>
             <section>
@@ -248,28 +218,7 @@
                 </div>
             </section>
         </main>
-
-        <footer class="rodape">
-            <div class="largura-total largura-max-1180 margem-auto-x preenchimento-x-5" style="padding-top: 2.5rem; padding-bottom: 2.5rem;">
-                <div class="grade grade-rodape espaco-9">
-                    <div>
-                        <p class="fonte-extra-negrito texto-xl">Partiu IF Piauí Online</p>
-                        <p class="fonte-negrito margem-superior-3 largura-max-lg altura-linha-7">Protótipo educacional feito por alunos para alunos.</p>
-                    </div>
-                    <nav class="grade grade-colunas-2 espaco-3 altura-max-conteudo" aria-label="Navegação do rodapé">
-                        <button class="link-rodape" data-rota="inicio">Início</button>
-                        <button class="link-rodape" data-rota="programa" disabled>Partiu IF</button>
-                        <button class="link-rodape" data-rota="estudo" disabled>Estude</button>
-                        <button class="link-rodape" data-rota="cursos" disabled>Cursos</button>
-                        <button class="link-rodape" data-rota="campi" disabled>Campi</button>
-                        <button class="link-rodape" data-rota="informacoes" disabled>Informações</button>
-                    </nav>
-                </div>
-                <div class="borda-superior margem-superior-8 preenchimento-superior-5">
-                    <p class="copyright-rodape"><strong>Partiu IF Piauí Online · Protótipo | Última atualização: 06/09/2026</strong></p>
-                </div>
-            </div>
-        </footer>
+        {% include 'components/_footer.html' %}
     </div>
 </body>
 </html>
