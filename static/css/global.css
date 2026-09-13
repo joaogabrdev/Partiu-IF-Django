@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+        --azul: #083b76;
+        --azul-escuro: #052b59;
+        --azul-claro: #eaf2fb;
+        --verde: #248653;
+        --verde-claro: #eaf7ef;
+        --tinta: #16324a;
+        --suave: #627487;
+        --linha: #d9e2eb;
+        --papel: #f7fafc;
+        --branco: #fff;
+        --branco-transparente: #fffffff5;
+}
+* {
+        font-family: "Montserrat", sans-serif;
+}
+
+body {
+        width: 100%;
+        margin: 0;
+        font-optical-sizing: auto;
+        font-style: normal;
+        overflow-x: hidden;
+}
+
+.principal {
+        overflow: hidden;
+        background-color: var(--papel);
+}
+
+button {
+        cursor: pointer;
+}
+
+
+.cabecalho-portal {
+        background-color: var(--branco);
+        border-radius: 0px 0px 40px 40px;
+        border-bottom: 1px solid var(--linha);
+}
+
+.botao-logo {
+        background-color: #ffffff00;
+        text-align: center;
+        margin-top: 1%;
+        margin-left: 6%;
+        border: none;
+}
+
+.botao-logo:hover {
+        opacity: 0.8;
+}
+
+.titulo-marca {
+        font-size: 220%;
+        font-weight: 700;
+        color: var(--azul);
+}
+
+.nav-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2%;
+        margin-top: -1%;
+}
+
+.item-nav {
+        border:none;
+        background: transparent;
+        color: #466076;
+        font-weight: 700;
+        font-size: 121%;
+        padding: 0.55rem 0.1rem;
+        border-bottom: 3px solid transparent;
+        transition: 0.18s;
+}
+
+.item-nav:hover,
+.item-nav.ativo {
+        color: var(--azul);
+        border-bottom-color: var(--verde);
+}
+
+.botao-area-estudante {
+        font-size: 126%;
+        padding: 1% 1%;
+        background: transparent;
+        border-radius: 12px;
+        color: #466076;
+        position: absolute;
+        font-weight: 800;
+        margin-right: -77%;
+        margin-bottom: 2%;
+        transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.botao-area-estudante:hover {
+        background-color: var(--azul);
+        color: white;
+}
+
+.icone-menu-mobile {
+        justify-content: center;
+}
+
+.botao-menu {
+        border: none;
+        background: #fff;
+        border-radius: 10px;
+        width: 42px;
+        height: 42px;
+        color: var(--azul);
+        display: none;
+        transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.botao-menu:hover {
+        background-color: var(--azul);
+        color: white;
+}
+
+.grade-menu-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        width: 80%;
+        height: 24%;
+}
+
+.item-nav-mobile {
+        border:none;
+        background: transparent;
+        color: #466076;
+        font-weight: 700;
+        font-size: 100%;
+        padding: 0.55rem 0.1rem;
+        border-bottom: 3px solid transparent;
+        transition: 0.18s;
+}
+
+.item-nav-mobile:hover,
+.item-nav-mobile.ativo {
+        color: var(--azul);
+        border-bottom-color: var(--verde);
+}
+
+.painel-mobile {
+        display: block;
+        border-top: 1px solid var(--linha);
+        padding: 1rem 1.25rem;
+        background: #fff;
+        border-radius: 0px 0px 20px 20px;
+}
+
+.rodape {
+        background-color: var(--azul-escuro);
+        color: var(--papel);
+        border-radius: 32px 32px 0px 0px;
+}
+
+.marca-rodape,
+.texto-rodape,
+.grade-nav-rodape,
+.rodape-aviso {
+        position: absolute;
+}
+
+.rodape-aviso {
+        border-top: 1px solid var(--linha);
+}
+
+.link-rodape:hover {
+        text-decoration: underline;
+        }
+
+@media (max-width: 330px) {
+        .nav-desktop,
+        .item-nav {
+                display: none;
+        }
+        
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 140%;
+        }
+
+        .botao-menu {
+                display: block;
+                margin-left: 75%;
+                margin-top: -9%;
+        }
+
+        .rodape {
+        height: 400px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 115%;
+        margin-top: 4%;
+        margin-left: 10%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 90%;
+        margin-top: 19%;
+        margin-left: 6%;
+        width: 70%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 42%;
+        margin-left: 14%;
+        width: 80%;
+        height: 24%;
+        }
+
+        .link-rodape {
+        font-size: 112%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 90%;
+        margin-top: 100%;
+        margin-left: 4%;
+        text-align: center;
+        width: 95%;
+        }
+}
+
+@media (min-width: 330px) and (max-width: 400px) {
+        .nav-desktop,
+        .item-nav {
+                display: none;
+        }
+        
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 140%;
+        }
+
+        .botao-menu {
+                display: block;
+                margin-left: 80%;
+                margin-top: -9%;
+        }
+        
+        .rodape {
+        height: 400px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 115%;
+        margin-top: 4%;
+        margin-left: 10%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 90%;
+        margin-top: 19%;
+        margin-left: 6%;
+        width: 70%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 40%;
+        margin-left: 14%;
+        width: 80%;
+        height: 24%;
+        }
+
+        .link-rodape {
+        font-size: 112%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 90%;
+        margin-top: 84%;
+        margin-left: 4%;
+        text-align: center;
+        width: 95%;
+        }
+}
+
+@media (min-width: 401px) and (max-width: 440px) {
+        .item-nav {
+                display: none;
+        }
+        
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 140%;
+        }
+
+        .botao-menu {
+                display: block;
+                margin-left: 80%;
+                margin-top: -6%;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: 0%;
+                margin-left: -53%;
+                font-size: 90%;
+        }
+        
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 115%;
+        margin-top: 4%;
+        margin-left: 10%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 115%;
+        margin-top: 16%;
+        margin-left: 6%;
+        width: 37%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 13%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 110%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 90%;
+        margin-top: 42%;
+        margin-left: 4%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 441px) and (max-width: 600px) {
+        .item-nav {
+                display: none;
+        }
+        
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 140%;
+        }
+
+        .botao-menu {
+                display: block;
+                margin-left: 80%;
+                margin-top: -5%;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -1%;
+                margin-left: -53%;
+                font-size: 90%;
+        }
+        
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 115%;
+        margin-top: 4%;
+        margin-left: 10%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 115%;
+        margin-top: 16%;
+        margin-left: 6%;
+        width: 37%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 13%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 110%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 90%;
+        margin-top: 42%;
+        margin-left: 4%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {        
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 140%;
+        }
+
+        .botao-menu {
+                display: none;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -16%;
+                margin-left: -12%;
+                font-size: 100%;
+        }
+
+        .nav-desktop {
+                margin-top: 5%;
+        }
+
+        .item-nav-01,
+        .item-nav-02,
+        .item-nav-03,
+        .item-nav-04,
+        .item-nav-05,
+        .item-nav-06 {
+                display: block;
+                font-size: 100%;
+        }
+
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 120%;
+        margin-top: 4%;
+        margin-left: 8%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 105%;
+        margin-top: 12%;
+        margin-left: 6%;
+        width: 40%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 11%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 105%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 90%;
+        margin-top: 33%;
+        margin-left: 4%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 160%;
+        }
+
+        .botao-menu {
+                display: none;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -12%;
+                margin-left: -12%;
+                font-size: 100%;
+        }
+
+        .nav-desktop {
+                margin-top: 3%;
+        }
+
+        .item-nav-01,
+        .item-nav-02,
+        .item-nav-03,
+        .item-nav-04,
+        .item-nav-05,
+        .item-nav-06 {
+                display: block;
+                font-size: 100%;
+        }
+        
+        .rodape {
+        height: 280px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 125%;
+        margin-top: 3%;
+        margin-left: 7%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 110%;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 42%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 6%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 108%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 85%;
+        margin-top: 22%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 160%;
+        }
+
+        .botao-menu {
+                display: none;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -10%;
+                margin-left: -12%;
+                font-size: 100%;
+        }
+
+        .nav-desktop {
+                margin-top: 3%;
+        }
+
+        .item-nav-01,
+        .item-nav-02,
+        .item-nav-03,
+        .item-nav-04,
+        .item-nav-05,
+        .item-nav-06 {
+                display: block;
+                font-size: 100%;
+        }
+        
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 125%;
+        margin-top: 3%;
+        margin-left: 7%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 110%;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 42%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 6%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 108%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 85%;
+        margin-top: 19%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 1199px) and (max-width: 1400px) {
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 180%;
+        }
+
+        .botao-menu {
+                display: none;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -8%;
+                margin-left: -12%;
+                font-size: 100%;
+        }
+
+        .nav-desktop {
+                margin-top: 3%;
+        }
+
+        .item-nav-01,
+        .item-nav-02,
+        .item-nav-03,
+        .item-nav-04,
+        .item-nav-05,
+        .item-nav-06 {
+                display: block;
+                font-size: 100%;
+        }
+
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 125%;
+        margin-top: 3%;
+        margin-left: 7%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 110%;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 42%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 6%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 108%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 85%;
+        margin-top: 18%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: start;
+        }
+}
+
+@media (min-width: 1401px) {
+        .botao-logo {
+                margin-top: 2%;
+                margin-left: 7%;
+        }
+
+        .titulo-marca {
+                font-size: 180%;
+        }
+
+        .botao-menu {
+                display: none;
+        }
+
+        .botao-area-estudante {
+                display: block;
+                margin-top: -8%;
+                margin-left: -12%;
+                font-size: 100%;
+        }
+
+        .nav-desktop {
+                margin-top: 3%;
+        }
+
+        .item-nav-01,
+        .item-nav-02,
+        .item-nav-03,
+        .item-nav-04,
+        .item-nav-05,
+        .item-nav-06 {
+                display: block;
+                font-size: 100%;
+        }
+        
+        .rodape {
+        height: 300px;
+        }
+
+        .marca-rodape {
+        font-weight: 800;
+        font-size: 125%;
+        margin-top: 3%;
+        margin-left: 7%;
+        }
+
+        .texto-rodape {
+        font-weight: 600;
+        font-size: 110%;
+        margin-top: 10%;
+        margin-left: 5%;
+        width: 42%;
+        text-align: start;
+        }
+
+        .grade-nav-rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0%;
+        margin-top: 4.5%;
+        margin-left: 47%;
+        width: 50%;
+        height: 20%;
+        }
+
+        .link-rodape {
+        font-size: 108%;
+        font-weight: 600;
+        background-color: #ffffff00;
+        color: var(--branco);
+        border-color: #feffff00;
+        text-align: start;
+        }
+
+        .rodape-aviso {
+        font-weight: 400;
+        font-size: 85%;
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 90%;
+        text-align: start;
+        }
+}
